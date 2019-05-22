@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.homeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -36,8 +35,6 @@
             this.settingToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.logToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.pnSetting = new MetroFramework.Controls.MetroPanel();
-            this.pnHome = new MetroFramework.Controls.MetroPanel();
             this.pnScheduller = new MetroFramework.Controls.MetroPanel();
             this.txtLog = new MetroFramework.Controls.MetroTextBox();
             this.button4 = new System.Windows.Forms.Button();
@@ -52,24 +49,27 @@
             this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
             this.txtJam = new MetroFramework.Controls.MetroLabel();
             this.btnStart = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Basic = new System.Windows.Forms.GroupBox();
-            this.btnDirError = new MetroFramework.Controls.MetroButton();
-            this.btnDirOutbox = new MetroFramework.Controls.MetroButton();
-            this.btnDirInbox = new MetroFramework.Controls.MetroButton();
-            this.txtDirError = new MetroFramework.Controls.MetroTextBox();
-            this.txtDirOutbox = new MetroFramework.Controls.MetroTextBox();
-            this.txtDirInbox = new MetroFramework.Controls.MetroTextBox();
-            this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button5 = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.button6 = new System.Windows.Forms.Button();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.button7 = new System.Windows.Forms.Button();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.button8 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
-            this.pnSetting.SuspendLayout();
-            this.pnHome.SuspendLayout();
             this.pnScheduller.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.Basic.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // openFileDialog1
@@ -102,8 +102,8 @@
             // schedullerToolStripMenuItem1
             // 
             this.schedullerToolStripMenuItem1.Name = "schedullerToolStripMenuItem1";
-            this.schedullerToolStripMenuItem1.Size = new System.Drawing.Size(101, 23);
-            this.schedullerToolStripMenuItem1.Text = "Scheduller";
+            this.schedullerToolStripMenuItem1.Size = new System.Drawing.Size(74, 23);
+            this.schedullerToolStripMenuItem1.Text = "Resend";
             this.schedullerToolStripMenuItem1.Click += new System.EventHandler(this.schedullerToolStripMenuItem1_Click);
             // 
             // settingToolStripMenuItem1
@@ -125,36 +125,6 @@
             this.aboutToolStripMenuItem1.Size = new System.Drawing.Size(65, 23);
             this.aboutToolStripMenuItem1.Text = "About";
             // 
-            // pnSetting
-            // 
-            this.pnSetting.Controls.Add(this.pnHome);
-            this.pnSetting.Controls.Add(this.Basic);
-            this.pnSetting.HorizontalScrollbarBarColor = true;
-            this.pnSetting.HorizontalScrollbarHighlightOnWheel = false;
-            this.pnSetting.HorizontalScrollbarSize = 10;
-            this.pnSetting.Location = new System.Drawing.Point(20, 108);
-            this.pnSetting.Name = "pnSetting";
-            this.pnSetting.Size = new System.Drawing.Size(1222, 689);
-            this.pnSetting.TabIndex = 10;
-            this.pnSetting.VerticalScrollbarBarColor = true;
-            this.pnSetting.VerticalScrollbarHighlightOnWheel = false;
-            this.pnSetting.VerticalScrollbarSize = 10;
-            // 
-            // pnHome
-            // 
-            this.pnHome.Controls.Add(this.pnScheduller);
-            this.pnHome.Controls.Add(this.pictureBox1);
-            this.pnHome.HorizontalScrollbarBarColor = true;
-            this.pnHome.HorizontalScrollbarHighlightOnWheel = false;
-            this.pnHome.HorizontalScrollbarSize = 10;
-            this.pnHome.Location = new System.Drawing.Point(3, 0);
-            this.pnHome.Name = "pnHome";
-            this.pnHome.Size = new System.Drawing.Size(1216, 686);
-            this.pnHome.TabIndex = 3;
-            this.pnHome.VerticalScrollbarBarColor = true;
-            this.pnHome.VerticalScrollbarHighlightOnWheel = false;
-            this.pnHome.VerticalScrollbarSize = 10;
-            // 
             // pnScheduller
             // 
             this.pnScheduller.Controls.Add(this.txtLog);
@@ -163,12 +133,13 @@
             this.pnScheduller.Controls.Add(this.button2);
             this.pnScheduller.Controls.Add(this.button1);
             this.pnScheduller.Controls.Add(this.groupBox1);
+            this.pnScheduller.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnScheduller.HorizontalScrollbarBarColor = true;
             this.pnScheduller.HorizontalScrollbarHighlightOnWheel = false;
             this.pnScheduller.HorizontalScrollbarSize = 10;
-            this.pnScheduller.Location = new System.Drawing.Point(3, 3);
+            this.pnScheduller.Location = new System.Drawing.Point(20, 60);
             this.pnScheduller.Name = "pnScheduller";
-            this.pnScheduller.Size = new System.Drawing.Size(1216, 686);
+            this.pnScheduller.Size = new System.Drawing.Size(1222, 740);
             this.pnScheduller.TabIndex = 11;
             this.pnScheduller.VerticalScrollbarBarColor = true;
             this.pnScheduller.VerticalScrollbarHighlightOnWheel = false;
@@ -342,186 +313,170 @@
             this.btnStart.UseVisualStyleBackColor = true;
             this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
-            // pictureBox1
+            // panel1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Turquoise;
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox1.Location = new System.Drawing.Point(190, 77);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(321, 224);
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.panel1.Controls.Add(this.button10);
+            this.panel1.Controls.Add(this.button9);
+            this.panel1.Controls.Add(this.groupBox2);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(20, 60);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1222, 740);
+            this.panel1.TabIndex = 9;
             // 
-            // Basic
+            // groupBox2
             // 
-            this.Basic.Controls.Add(this.btnDirError);
-            this.Basic.Controls.Add(this.btnDirOutbox);
-            this.Basic.Controls.Add(this.btnDirInbox);
-            this.Basic.Controls.Add(this.txtDirError);
-            this.Basic.Controls.Add(this.txtDirOutbox);
-            this.Basic.Controls.Add(this.txtDirInbox);
-            this.Basic.Controls.Add(this.metroLabel3);
-            this.Basic.Controls.Add(this.metroLabel2);
-            this.Basic.Controls.Add(this.metroLabel1);
-            this.Basic.Location = new System.Drawing.Point(23, 16);
-            this.Basic.Name = "Basic";
-            this.Basic.Size = new System.Drawing.Size(475, 157);
-            this.Basic.TabIndex = 2;
-            this.Basic.TabStop = false;
-            this.Basic.Text = "Basic";
+            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this.button5);
+            this.groupBox2.Controls.Add(this.textBox2);
+            this.groupBox2.Controls.Add(this.button6);
+            this.groupBox2.Controls.Add(this.textBox3);
+            this.groupBox2.Controls.Add(this.button7);
+            this.groupBox2.Controls.Add(this.textBox4);
+            this.groupBox2.Controls.Add(this.button8);
+            this.groupBox2.Controls.Add(this.label1);
+            this.groupBox2.Controls.Add(this.label4);
+            this.groupBox2.Controls.Add(this.label2);
+            this.groupBox2.Controls.Add(this.label3);
+            this.groupBox2.Location = new System.Drawing.Point(37, 61);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(453, 158);
+            this.groupBox2.TabIndex = 13;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Direktori";
             // 
-            // btnDirError
+            // textBox1
             // 
-            this.btnDirError.Location = new System.Drawing.Point(410, 90);
-            this.btnDirError.Name = "btnDirError";
-            this.btnDirError.Size = new System.Drawing.Size(45, 23);
-            this.btnDirError.TabIndex = 7;
-            this.btnDirError.Text = "...";
-            this.btnDirError.UseSelectable = true;
+            this.textBox1.Location = new System.Drawing.Point(148, 31);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(246, 25);
+            this.textBox1.TabIndex = 0;
             // 
-            // btnDirOutbox
+            // button5
             // 
-            this.btnDirOutbox.Location = new System.Drawing.Point(409, 61);
-            this.btnDirOutbox.Name = "btnDirOutbox";
-            this.btnDirOutbox.Size = new System.Drawing.Size(45, 23);
-            this.btnDirOutbox.TabIndex = 7;
-            this.btnDirOutbox.Text = "...";
-            this.btnDirOutbox.UseSelectable = true;
+            this.button5.Location = new System.Drawing.Point(400, 115);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(29, 26);
+            this.button5.TabIndex = 11;
+            this.button5.Text = "...";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
-            // btnDirInbox
+            // textBox2
             // 
-            this.btnDirInbox.Location = new System.Drawing.Point(410, 32);
-            this.btnDirInbox.Name = "btnDirInbox";
-            this.btnDirInbox.Size = new System.Drawing.Size(45, 23);
-            this.btnDirInbox.TabIndex = 6;
-            this.btnDirInbox.Text = "...";
-            this.btnDirInbox.UseSelectable = true;
+            this.textBox2.Location = new System.Drawing.Point(148, 59);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(246, 25);
+            this.textBox2.TabIndex = 1;
             // 
-            // txtDirError
+            // button6
             // 
+            this.button6.Location = new System.Drawing.Point(400, 87);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(29, 25);
+            this.button6.TabIndex = 10;
+            this.button6.Text = "...";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
+            // textBox3
             // 
+            this.textBox3.Location = new System.Drawing.Point(148, 87);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(246, 25);
+            this.textBox3.TabIndex = 2;
             // 
-            this.txtDirError.CustomButton.Image = null;
-            this.txtDirError.CustomButton.Location = new System.Drawing.Point(211, 1);
-            this.txtDirError.CustomButton.Name = "";
-            this.txtDirError.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.txtDirError.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtDirError.CustomButton.TabIndex = 1;
-            this.txtDirError.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtDirError.CustomButton.UseSelectable = true;
-            this.txtDirError.CustomButton.Visible = false;
-            this.txtDirError.Lines = new string[0];
-            this.txtDirError.Location = new System.Drawing.Point(170, 90);
-            this.txtDirError.MaxLength = 32767;
-            this.txtDirError.Name = "txtDirError";
-            this.txtDirError.PasswordChar = '\0';
-            this.txtDirError.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtDirError.SelectedText = "";
-            this.txtDirError.SelectionLength = 0;
-            this.txtDirError.SelectionStart = 0;
-            this.txtDirError.ShortcutsEnabled = true;
-            this.txtDirError.Size = new System.Drawing.Size(233, 23);
-            this.txtDirError.TabIndex = 5;
-            this.txtDirError.UseSelectable = true;
-            this.txtDirError.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtDirError.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // button7
             // 
-            // txtDirOutbox
+            this.button7.Location = new System.Drawing.Point(400, 58);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(29, 26);
+            this.button7.TabIndex = 9;
+            this.button7.Text = "...";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
+            // textBox4
             // 
+            this.textBox4.Location = new System.Drawing.Point(148, 115);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(246, 25);
+            this.textBox4.TabIndex = 3;
             // 
+            // button8
             // 
-            this.txtDirOutbox.CustomButton.Image = null;
-            this.txtDirOutbox.CustomButton.Location = new System.Drawing.Point(211, 1);
-            this.txtDirOutbox.CustomButton.Name = "";
-            this.txtDirOutbox.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.txtDirOutbox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtDirOutbox.CustomButton.TabIndex = 1;
-            this.txtDirOutbox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtDirOutbox.CustomButton.UseSelectable = true;
-            this.txtDirOutbox.CustomButton.Visible = false;
-            this.txtDirOutbox.Lines = new string[0];
-            this.txtDirOutbox.Location = new System.Drawing.Point(170, 61);
-            this.txtDirOutbox.MaxLength = 32767;
-            this.txtDirOutbox.Name = "txtDirOutbox";
-            this.txtDirOutbox.PasswordChar = '\0';
-            this.txtDirOutbox.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtDirOutbox.SelectedText = "";
-            this.txtDirOutbox.SelectionLength = 0;
-            this.txtDirOutbox.SelectionStart = 0;
-            this.txtDirOutbox.ShortcutsEnabled = true;
-            this.txtDirOutbox.Size = new System.Drawing.Size(233, 23);
-            this.txtDirOutbox.TabIndex = 4;
-            this.txtDirOutbox.UseSelectable = true;
-            this.txtDirOutbox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtDirOutbox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.button8.Location = new System.Drawing.Point(400, 30);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(29, 26);
+            this.button8.TabIndex = 8;
+            this.button8.Text = "...";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
-            // txtDirInbox
+            // label1
             // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(18, 34);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(76, 20);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Dir. Inbox";
             // 
+            // label4
             // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(18, 118);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(72, 20);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Dir. Error";
             // 
-            this.txtDirInbox.CustomButton.Image = null;
-            this.txtDirInbox.CustomButton.Location = new System.Drawing.Point(211, 1);
-            this.txtDirInbox.CustomButton.Name = "";
-            this.txtDirInbox.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.txtDirInbox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtDirInbox.CustomButton.TabIndex = 1;
-            this.txtDirInbox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtDirInbox.CustomButton.UseSelectable = true;
-            this.txtDirInbox.CustomButton.Visible = false;
-            this.txtDirInbox.Lines = new string[0];
-            this.txtDirInbox.Location = new System.Drawing.Point(170, 32);
-            this.txtDirInbox.MaxLength = 32767;
-            this.txtDirInbox.Name = "txtDirInbox";
-            this.txtDirInbox.PasswordChar = '\0';
-            this.txtDirInbox.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtDirInbox.SelectedText = "";
-            this.txtDirInbox.SelectionLength = 0;
-            this.txtDirInbox.SelectionStart = 0;
-            this.txtDirInbox.ShortcutsEnabled = true;
-            this.txtDirInbox.Size = new System.Drawing.Size(233, 23);
-            this.txtDirInbox.TabIndex = 3;
-            this.txtDirInbox.UseSelectable = true;
-            this.txtDirInbox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtDirInbox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // label2
             // 
-            // metroLabel3
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(18, 62);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(88, 20);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Dir. Outbox";
             // 
-            this.metroLabel3.AutoSize = true;
-            this.metroLabel3.Location = new System.Drawing.Point(28, 90);
-            this.metroLabel3.Name = "metroLabel3";
-            this.metroLabel3.Size = new System.Drawing.Size(97, 20);
-            this.metroLabel3.TabIndex = 2;
-            this.metroLabel3.Text = "Direktori Error";
+            // label3
             // 
-            // metroLabel2
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(18, 90);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(98, 20);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Dir. Success";
             // 
-            this.metroLabel2.AutoSize = true;
-            this.metroLabel2.Location = new System.Drawing.Point(28, 61);
-            this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(111, 20);
-            this.metroLabel2.TabIndex = 1;
-            this.metroLabel2.Text = "Direktori Outbox";
+            // button9
             // 
-            // metroLabel1
+            this.button9.Location = new System.Drawing.Point(508, 633);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(75, 38);
+            this.button9.TabIndex = 14;
+            this.button9.Text = "Save";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
-            this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(28, 32);
-            this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(99, 20);
-            this.metroLabel1.TabIndex = 0;
-            this.metroLabel1.Text = "Direktori Inbox";
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(645, 633);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(75, 38);
+            this.button10.TabIndex = 15;
+            this.button10.Text = "Cancel";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1262, 820);
-            this.Controls.Add(this.pnSetting);
             this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.pnScheduller);
+            this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.163636F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Main";
@@ -529,14 +484,12 @@
             this.Load += new System.EventHandler(this.Main_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.pnSetting.ResumeLayout(false);
-            this.pnHome.ResumeLayout(false);
             this.pnScheduller.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.Basic.ResumeLayout(false);
-            this.Basic.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -550,19 +503,6 @@
         private System.Windows.Forms.ToolStripMenuItem settingToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem logToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem1;
-        private MetroFramework.Controls.MetroPanel pnSetting;
-        private System.Windows.Forms.GroupBox Basic;
-        private MetroFramework.Controls.MetroButton btnDirError;
-        private MetroFramework.Controls.MetroButton btnDirOutbox;
-        private MetroFramework.Controls.MetroButton btnDirInbox;
-        private MetroFramework.Controls.MetroTextBox txtDirError;
-        private MetroFramework.Controls.MetroTextBox txtDirOutbox;
-        private MetroFramework.Controls.MetroTextBox txtDirInbox;
-        private MetroFramework.Controls.MetroLabel metroLabel3;
-        private MetroFramework.Controls.MetroLabel metroLabel2;
-        private MetroFramework.Controls.MetroLabel metroLabel1;
-        private MetroFramework.Controls.MetroPanel pnHome;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private MetroFramework.Controls.MetroPanel pnScheduller;
         private System.Windows.Forms.GroupBox groupBox1;
         private MetroFramework.Controls.MetroLabel txtJam;
@@ -577,6 +517,22 @@
         private MetroFramework.Controls.MetroLabel txtNext;
         private MetroFramework.Controls.MetroLabel metroLabel5;
         private MetroFramework.Controls.MetroTextBox txtLog;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button9;
     }
 }
 

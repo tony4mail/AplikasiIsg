@@ -35,6 +35,10 @@ namespace AplikasiIsg
         private void Main_Load(object sender, EventArgs e)
         {
             reloadini();
+            textBox1.Text = inbox;
+            textBox2.Text = outbox;
+            textBox3.Text = succcess;
+            textBox4.Text = error;
 
             //timer interval
             t.Interval = 1000;  //in milliseconds
@@ -248,21 +252,20 @@ namespace AplikasiIsg
 
         private void hidePanel()
         {
-            pnHome.Hide();
             pnScheduller.Hide();
-            pnSetting.Hide();
+            panel1.Hide();
         }
 
         private void homeToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-            //showPanel(pnHome);
+            pnScheduller.BringToFront();
         }
 
         private void settingToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            //showPanel(pnSetting);
-            Setting f3 = new Setting();
-            f3.ShowDialog();
+            panel1.BringToFront();
+            //Setting f3 = new Setting();
+            //f3.ShowDialog();
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -281,6 +284,66 @@ namespace AplikasiIsg
             var fm = new fileMan();
             List<string> jum = fm.jumlah("c:\\tes\\xls\\tes.xlsx", "xlsx");
             jum.ForEach(el => Console.WriteLine(el));
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            FolderBrowserDialog fbd = new FolderBrowserDialog();
+            if (fbd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                textBox1.Text = fbd.SelectedPath;
+            }
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            FolderBrowserDialog fbd = new FolderBrowserDialog();
+            if (fbd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                textBox2.Text = fbd.SelectedPath;
+            }
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            FolderBrowserDialog fbd = new FolderBrowserDialog();
+            if (fbd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                textBox3.Text = fbd.SelectedPath;
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            FolderBrowserDialog fbd = new FolderBrowserDialog();
+            if (fbd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                textBox4.Text = fbd.SelectedPath;
+            }
+        }
+        private void writeini(string title, string set)
+        {
+            INIFile ini = new INIFile(@"C:\tes\setting\config.ini");
+            ini.Write("Direktori", title, set);
+        }
+        private void button9_Click(object sender, EventArgs e)
+        {
+            writeini("Inbox", textBox1.Text);
+            writeini("Outbox", textBox2.Text);
+            writeini("Success", textBox3.Text);
+            writeini("Error", textBox4.Text);
+            panel1.SendToBack();
+            MessageBox.Show("Saved","Information");
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            panel1.SendToBack();
+            reloadini();
+            textBox1.Text = inbox;
+            textBox2.Text = outbox;
+            textBox3.Text = succcess;
+            textBox4.Text = error;
         }
 
         private void button3_Click_1(object sender, EventArgs e)
