@@ -40,32 +40,6 @@ D:\Bejjo\Tugas\Project\AplikasiIsg-master\AplikasiIsg\obj\Debug\AplikasiIsg.Logi
 D:\Bejjo\Tugas\Project\AplikasiIsg-master\AplikasiIsg\obj\Debug\AplikasiIsg.Main.resources
 D:\Bejjo\Tugas\Project\AplikasiIsg-master\AplikasiIsg\obj\Debug\AplikasiIsg.Properties.Resources.resources
 D:\Bejjo\Tugas\Project\AplikasiIsg-master\AplikasiIsg\obj\Debug\AplikasiIsg.csproj.GenerateResource.Cache
-<<<<<<< HEAD
-<<<<<<< HEAD
-D:\Bejjo\Tugas\Project\AplikasiIsg-master\AplikasiIsg\obj\Debug\AplikasiIsg.Setting.resources
-C:\Users\tony4\Documents\Visual Studio 2015\Projects\AplikasiIsg\AplikasiIsg-master\AplikasiIsg\bin\Debug\AplikasiIsg.exe.config
-C:\Users\tony4\Documents\Visual Studio 2015\Projects\AplikasiIsg\AplikasiIsg-master\AplikasiIsg\obj\Debug\Interop.Microsoft.Office.Core.dll
-C:\Users\tony4\Documents\Visual Studio 2015\Projects\AplikasiIsg\AplikasiIsg-master\AplikasiIsg\obj\Debug\AplikasiIsg.csproj.ResolveComReference.cache
-C:\Users\tony4\Documents\Visual Studio 2015\Projects\AplikasiIsg\AplikasiIsg-master\AplikasiIsg\obj\Debug\AplikasiIsg.exe
-C:\Users\tony4\Documents\Visual Studio 2015\Projects\AplikasiIsg\AplikasiIsg-master\AplikasiIsg\obj\Debug\AplikasiIsg.pdb
-C:\Users\tony4\Documents\Visual Studio 2015\Projects\AplikasiIsg\AplikasiIsg-master\AplikasiIsg\bin\Debug\AplikasiIsg.exe
-C:\Users\tony4\Documents\Visual Studio 2015\Projects\AplikasiIsg\AplikasiIsg-master\AplikasiIsg\bin\Debug\AplikasiIsg.pdb
-C:\Users\tony4\Documents\Visual Studio 2015\Projects\AplikasiIsg\AplikasiIsg-master\AplikasiIsg\bin\Debug\ICSharpCode.SharpZipLib.dll
-C:\Users\tony4\Documents\Visual Studio 2015\Projects\AplikasiIsg\AplikasiIsg-master\AplikasiIsg\bin\Debug\MetroFramework.Design.dll
-C:\Users\tony4\Documents\Visual Studio 2015\Projects\AplikasiIsg\AplikasiIsg-master\AplikasiIsg\bin\Debug\MetroFramework.dll
-C:\Users\tony4\Documents\Visual Studio 2015\Projects\AplikasiIsg\AplikasiIsg-master\AplikasiIsg\bin\Debug\MetroFramework.Fonts.dll
-C:\Users\tony4\Documents\Visual Studio 2015\Projects\AplikasiIsg\AplikasiIsg-master\AplikasiIsg\bin\Debug\NPOI.dll
-C:\Users\tony4\Documents\Visual Studio 2015\Projects\AplikasiIsg\AplikasiIsg-master\AplikasiIsg\bin\Debug\NPOI.OOXML.dll
-C:\Users\tony4\Documents\Visual Studio 2015\Projects\AplikasiIsg\AplikasiIsg-master\AplikasiIsg\bin\Debug\NPOI.OpenXml4Net.dll
-C:\Users\tony4\Documents\Visual Studio 2015\Projects\AplikasiIsg\AplikasiIsg-master\AplikasiIsg\bin\Debug\NPOI.OpenXmlFormats.dll
-C:\Users\tony4\Documents\Visual Studio 2015\Projects\AplikasiIsg\AplikasiIsg-master\AplikasiIsg\bin\Debug\ICSharpCode.SharpZipLib.xml
-C:\Users\tony4\Documents\Visual Studio 2015\Projects\AplikasiIsg\AplikasiIsg-master\AplikasiIsg\obj\Debug\AplikasiIsg.csprojResolveAssemblyReference.cache
-C:\Users\tony4\Documents\Visual Studio 2015\Projects\AplikasiIsg\AplikasiIsg-master\AplikasiIsg\obj\Debug\AplikasiIsg.Login.resources
-C:\Users\tony4\Documents\Visual Studio 2015\Projects\AplikasiIsg\AplikasiIsg-master\AplikasiIsg\obj\Debug\AplikasiIsg.Main.resources
-C:\Users\tony4\Documents\Visual Studio 2015\Projects\AplikasiIsg\AplikasiIsg-master\AplikasiIsg\obj\Debug\AplikasiIsg.Properties.Resources.resources
-C:\Users\tony4\Documents\Visual Studio 2015\Projects\AplikasiIsg\AplikasiIsg-master\AplikasiIsg\obj\Debug\AplikasiIsg.Setting.resources
-C:\Users\tony4\Documents\Visual Studio 2015\Projects\AplikasiIsg\AplikasiIsg-master\AplikasiIsg\obj\Debug\AplikasiIsg.csproj.GenerateResource.Cache
-=======
 D:\Bejjo\Tugas\Project\AplikasiIsg-master1\AplikasiIsg\bin\Debug\AplikasiIsg.exe.config
 D:\Bejjo\Tugas\Project\AplikasiIsg-master1\AplikasiIsg\obj\Debug\Interop.Microsoft.Office.Core.dll
 D:\Bejjo\Tugas\Project\AplikasiIsg-master1\AplikasiIsg\obj\Debug\AplikasiIsg.csproj.ResolveComReference.cache
@@ -88,7 +62,3 @@ D:\Bejjo\Tugas\Project\AplikasiIsg-master1\AplikasiIsg\obj\Debug\AplikasiIsg.Mai
 D:\Bejjo\Tugas\Project\AplikasiIsg-master1\AplikasiIsg\obj\Debug\AplikasiIsg.Properties.Resources.resources
 D:\Bejjo\Tugas\Project\AplikasiIsg-master1\AplikasiIsg\obj\Debug\AplikasiIsg.csproj.GenerateResource.Cache
 D:\Bejjo\Tugas\Project\AplikasiIsg-master1\AplikasiIsg\obj\Debug\AplikasiIsg.About.resources
->>>>>>> 70875f39af4318e9654166c4121fdc716f0b0108
-=======
-D:\Bejjo\Tugas\Project\AplikasiIsg-master\AplikasiIsg\obj\Debug\AplikasiIsg.Setting.resources
->>>>>>> parent of 70875f3... Add files via upload
