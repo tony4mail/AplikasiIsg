@@ -41,6 +41,7 @@ D:\Bejjo\Tugas\Project\AplikasiIsg-master\AplikasiIsg\obj\Debug\AplikasiIsg.Main
 D:\Bejjo\Tugas\Project\AplikasiIsg-master\AplikasiIsg\obj\Debug\AplikasiIsg.Properties.Resources.resources
 D:\Bejjo\Tugas\Project\AplikasiIsg-master\AplikasiIsg\obj\Debug\AplikasiIsg.csproj.GenerateResource.Cache
 <<<<<<< HEAD
+<<<<<<< HEAD
 D:\Bejjo\Tugas\Project\AplikasiIsg-master\AplikasiIsg\obj\Debug\AplikasiIsg.Setting.resources
 C:\Users\tony4\Documents\Visual Studio 2015\Projects\AplikasiIsg\AplikasiIsg-master\AplikasiIsg\bin\Debug\AplikasiIsg.exe.config
 C:\Users\tony4\Documents\Visual Studio 2015\Projects\AplikasiIsg\AplikasiIsg-master\AplikasiIsg\obj\Debug\Interop.Microsoft.Office.Core.dll
@@ -88,3 +89,6 @@ D:\Bejjo\Tugas\Project\AplikasiIsg-master1\AplikasiIsg\obj\Debug\AplikasiIsg.Pro
 D:\Bejjo\Tugas\Project\AplikasiIsg-master1\AplikasiIsg\obj\Debug\AplikasiIsg.csproj.GenerateResource.Cache
 D:\Bejjo\Tugas\Project\AplikasiIsg-master1\AplikasiIsg\obj\Debug\AplikasiIsg.About.resources
 >>>>>>> 70875f39af4318e9654166c4121fdc716f0b0108
+=======
+D:\Bejjo\Tugas\Project\AplikasiIsg-master\AplikasiIsg\obj\Debug\AplikasiIsg.Setting.resources
+>>>>>>> parent of 70875f3... Add files via upload
